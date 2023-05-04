@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: ${db.url} #jdbc:oracle:thin:@//localhost:1521/test_db
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: ${db.user} #test
+    password: ${db.password} #test
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false

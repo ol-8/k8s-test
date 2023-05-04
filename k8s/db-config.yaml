@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  env: "-Ddb.url=jdbc:oracle:thin:@//host.docker.internal:1521/test_db -Ddb.user=test -Ddb.password=test"
